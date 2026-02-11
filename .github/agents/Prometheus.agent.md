@@ -148,7 +148,10 @@ Write a comprehensive plan file to `<plan-directory>/<task-name>-plan.md` (using
 
 ### Phase 1: {Phase Title}
 
-**Objective:** {Clear goal for this phase}
+**Objective:** {Clear goal: "User can X", not just "Implement class Y"}
+
+**User Verification (Demo):**
+- {Step-by-step instructions for the user to manually verify the feature works end-to-end after this phase}
 
 **Files to Modify/Create:**
 - {file}: {specific changes needed}
@@ -166,13 +169,13 @@ Write a comprehensive plan file to `<plan-directory>/<task-name>-plan.md` (using
 5. {Quality: lint/format}
 
 **Acceptance Criteria:**
-- [ ] {Specific, testable criteria}
+- [ ] Feature is interactable by the user
 - [ ] All tests pass
 - [ ] Code follows project conventions
 
 ---
 
-{Repeat for 3-10 phases, each incremental and self-contained}
+{Repeat for 3-6+ phases. CRITICAL: Each phase MUST be a "Vertical Slice" that results in a functioning, user-testable feature (UI + Logic + DB). Do not split layers across phases.}
 
 ## Open Questions
 
@@ -200,11 +203,11 @@ Write a comprehensive plan file to `<plan-directory>/<task-name>-plan.md` (using
 
 **Plan Quality Standards:**
 
-- **Incremental:** Each phase is self-contained with its own tests
-- **TDD-driven:** Every phase follows red-green-refactor cycle
-- **Specific:** Include file paths, function names, not vague descriptions
-- **Testable:** Clear acceptance criteria for each phase
-- **Practical:** Address real constraints, not ideal-world scenarios
+- **Vertical Slices (CRITICAL):** Do NOT plan in horizontal layers (e.g., "Phase 1: Database", "Phase 2: API"). Every phase must be a vertical slice that results in a **functioning, user-testable feature** (UI + Logic + DB).
+- **User-Testable:** The end of every phase must result in a state where the user can manually run/click/interact with the new feature.
+- **TDD-driven:** Every phase follows red-green-refactor cycle.
+- **Specific:** Include file paths, function names, not vague descriptions.
+- **Practical:** Address real constraints.
 
 **When You're Done:**
 

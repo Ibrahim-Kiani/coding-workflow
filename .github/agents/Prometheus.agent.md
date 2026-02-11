@@ -203,8 +203,8 @@ Write a comprehensive plan file to `<plan-directory>/<task-name>-plan.md` (using
 
 **Plan Quality Standards:**
 
-- **Vertical Slices (CRITICAL):** Do NOT plan in horizontal layers (e.g., "Phase 1: Database", "Phase 2: API"). Every phase must be a vertical slice that results in a **functioning, user-testable feature** (UI + Logic + DB).
-- **User-Testable:** The end of every phase must result in a state where the user can manually run/click/interact with the new feature.
+- **Vertical Slices (CRITICAL):** Do NOT plan in horizontal layers (e.g., "Phase 1: Database", "Phase 2: API"). Every phase ABSOLUTELY MUST be a vertical slice that results in a **functioning, user-testable feature** (UI + Logic + DB).
+- **User-Testable:** The end of every phase MUST result in a state where the user can manually run/click/interact with the new feature.
 - **TDD-driven:** Every phase follows red-green-refactor cycle.
 - **Specific:** Include file paths, function names, not vague descriptions.
 - **Practical:** Address real constraints.

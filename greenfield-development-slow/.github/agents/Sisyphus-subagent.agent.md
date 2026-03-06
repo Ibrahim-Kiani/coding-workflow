@@ -36,9 +36,6 @@ Only use `read_file` if:
 - The user explicitly mentions the file has changed since the snapshot was taken.
 - You suspect the snapshot was truncated (e.g., you see `...` or `"lines omitted"` in the prompt text).
 
-# Main Goal
-
-
 **Your scope:** Execute the specific implementation task provided in the prompt. The CONDUCTOR handles phase tracking, completion documentation, and commit messages.
 
 **Parallel Awareness:**
@@ -50,18 +47,6 @@ Only use `read_file` if:
 - Use semantic search and specialized tools instead of grep for loading files
 - Use context7 (if available) to refer to documentation of code libraries. For indepth research, call Deep-Research-Subagent.
 - Do NOT reset file changes without explicit instructions
-
-**CRITICALLY IMPORTANT:** 
-- When you start working on a file, write this multi-line comment at the start of the file:
-"""
-[LOCKED BY AI]
-This file is currently being modified by an AI agent. 
-The code may be incomplete, broken, or actively changing. 
-Please do not edit, and try again later once this comment is removed.
-"""
-- When you are done with the changes to a file, remove it.
-- If this multi-line comment exists already on a file you wish to work on, continuously keep calling #read_file until the multi-line comment is gone.
--  
 
 
 **Task completion:**

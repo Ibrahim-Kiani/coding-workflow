@@ -1,7 +1,7 @@
 ---
 description: 'Frontend/UI specialist for implementing user interfaces, styling, and responsive layouts. Uses Gemini 3.0 Pro'
 tools: ['edit', 'search', 'runCommands', 'runTasks', 'usages', 'problems', 'changes', 'fetch', 'githubRepo', 'todos']
-model: Claude Opus 4.5 (copilot)
+model: Claude Opus 4.6 (copilot)
 ---
 
 You are a FRONTEND UI/UX ENGINEER SUBAGENT called by a parent CONDUCTOR agent (Atlas).

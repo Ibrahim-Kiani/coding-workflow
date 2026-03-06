@@ -10,9 +10,9 @@ LANGS = {
     ".jsx",
     ".tsx",
     ".html",
-    ".css",
-    ".md"
+    ".css"
 }
+
 # Mapping of file extensions to Markdown fenced code block language hints
 EXT_LANG = {
     ".py": "python",
@@ -21,8 +21,7 @@ EXT_LANG = {
     ".jsx": "jsx",
     ".tsx": "tsx",
     ".html": "html",
-    ".css": "css",
-    ".md": "md"
+    ".css": "css"
 }
 
 
@@ -34,7 +33,7 @@ def gather_files(folder, exclude_dirs=None):
 
     matches = []
     for root, dirs, files in os.walk(folder):
-        dirs[:] = [d for d in dirs if d not in exclude_set and not d.startswith('.')]
+        dirs[:] = [d for d in dirs if d not in exclude_set]
         for file in files:
             if Path(file).suffix in LANGS:
                 matches.append(os.path.join(root, file))

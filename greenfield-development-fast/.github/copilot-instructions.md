@@ -1,0 +1,2 @@
+# IMPORTANT:
+If you find contradictions in the instructions given to you, ALWAYS use #vscode/askQuestions to clarify all of them before continuing. NEVER continue on the basis of CRITICAL contradictions/shifts in the original plans/prds.

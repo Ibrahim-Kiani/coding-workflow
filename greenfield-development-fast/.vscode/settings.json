@@ -53,5 +53,5 @@
     "github.copilot.chat.anthropic.tools.websearch.enabled": true,
     "github.copilot.chat.cli.mcp.enabled": true,
     "github.copilot.chat.copilotMemory.enabled": true,
-    "github.copilot.chat.searchSubagent.toolCallLimit": 12
+    "github.copilot.chat.searchSubagent.toolCallLimit": 100
 }

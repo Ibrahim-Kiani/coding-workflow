@@ -1,7 +1,7 @@
 ---
 description: 'acting as a Principal Architect, creates a modular, parallel-safe backend implementation plan.'
 tools: ['edit', 'search', 'tavily-web-search/tavily_search', 'runSubagent', 'vscode/askQuestions']
-model: GPT-5.2 (copilot)
+model: GPT-5.4 (copilot)
 disable-model-invocation: true
 handoffs:
   - label: Start implementation with Atlas

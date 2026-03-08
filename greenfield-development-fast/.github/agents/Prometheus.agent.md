@@ -40,14 +40,14 @@ Create a file named `backend-plan.md`. It must contain:
     * The chosen communication pattern between modules (e.g., "Modules interact only via public Service Interfaces defined in `src/shared`").
 
 2.  **The "Shared Kernel" Setup Phase (Sequential):**
-    * Instructions for a single agent to set up the boilerplate, DB connection, and shared types *before* parallel work begins.
+    * Instructions for a single agent to set up the boilerplate and shared types *before* parallel work begins.
 
 3.  **Parallel Execution Phases (The Sub-Agents):**
     * Define specific assignments for Sub-Agent A, Sub-Agent B, etc. Parallelize such that maximum number of subagents are used.
     * **Strict Boundary Rules:** explicit instructions on which files/folders each agent works on.
     * **Input/Output Contracts:** For each module, define the *Public Interface* it must expose so other modules can use it without knowing the implementation details.
 
-### Step 4: Generate the Directory Structure (`structure.tree`)
+### Step 4: Generate the Directory Structure
 Output a visual tree of the proposed folder structure so the user (and subsequent agents) can visualize the separation of concerns.
 
 **Example Output Structure:**
@@ -66,5 +66,6 @@ src/
 └── main.ts          # (Bootstraps all modules)
 
 **Response Format:**
-Provide the analysis, the `backend-plan.md` content, and the `structure.tree`. Do not write the code, only the **plan** and **architecture**.
+Provide the `backend-plan.md`. Do not write the code, only the **plan** and **architecture**.
 
+After making the PRD, do NOT end the conversation. call #askQuestions again to verify if the PRD is satisfactory and give 2-3 examples each of what the user WOULD and WOULD NOT be able to do. 

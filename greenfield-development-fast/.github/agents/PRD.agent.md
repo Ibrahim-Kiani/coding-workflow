@@ -1,7 +1,7 @@
 ---
 name: "PRD"
 description: 'PRD Generator that creates a PRD for a MVP application'
-tools: [vscode/askQuestions, read/readFile, agent, edit/createDirectory, edit/createFile, edit/editFiles, search, agent/runSubagent, tavily-web-search/tavily_search]
+tools: [vscode/askQuestions, read/readFile, agent, edit/createDirectory, edit/createFile, edit/editFiles, search, agent/runSubagent, tavily-web-search/tavily_search, tavily-web-search/tavily_extract]
 model: GPT-5.2 (copilot)
 ---
 
